@@ -41,6 +41,7 @@ class PowerListResource(Resource):
         return jsonify([power.to_dict(rules={'-hero_powers': True}) for power in powers])
 
 
+
 class PowerDetailResource(Resource):
     def get(self, id):
         power = db.session.get(Power, id)  # Update here
