@@ -46,6 +46,7 @@ class Power(db.Model, SerializerMixin):
 
     # Serialization rules
     serialize_rules = ('-hero_powers.power',)
+    
 
     # Validation for description length
     @validates('description')
